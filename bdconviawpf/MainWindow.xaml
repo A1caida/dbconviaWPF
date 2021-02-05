@@ -8,14 +8,20 @@
         Title="Регистрация в систему" Height="350" Width="600" ResizeMode="NoResize">
     <Viewbox Stretch="Fill">
         <Grid Height="321" Width="594">
+
             <Grid.Background>
-                <ImageBrush ImageSource="C:\Users\A1caida\Downloads\Kurisu\EroQEhaVkAAGR2E.jpg" Stretch="Uniform" AlignmentX="Right"/>
+
+                <ImageBrush ImageSource="Kurisu.jpg" Stretch="Uniform" AlignmentX="Right"/>
             </Grid.Background>
             <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition> <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition> <RowDefinition></RowDefinition> 
-                <RowDefinition></RowDefinition> <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition> <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
@@ -37,7 +43,6 @@
                     <TextBlock>Женский</TextBlock>
                 </StackPanel>
             </ComboBox>
-
         </Grid>
     </Viewbox>
 </Window>

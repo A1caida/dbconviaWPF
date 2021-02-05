@@ -20,16 +20,17 @@ namespace bdconviawpf
     {
         MySqlConnection Connection;
         
-
         public db(string server, string user, string pass, string database)
         {
-            MySqlConnectionStringBuilder Connect = new MySqlConnectionStringBuilder();
-            Connect.Server = server;
-            Connect.UserID = user;
-            Connect.Password = pass;
-            Connect.Port = 3306;
-            Connect.Database = database;
-            Connect.CharacterSet = "utf8";
+            MySqlConnectionStringBuilder Connect = new MySqlConnectionStringBuilder
+            {
+                Server = server,
+                UserID = user,
+                Password = pass,
+                Port = 3306,
+                Database = database,
+                CharacterSet = "utf8"
+            };
             Connection = new MySqlConnection(Connect.ConnectionString);
         }
         public long insert(string surname, string namee, int born, int gen, int children)
@@ -91,7 +92,8 @@ namespace bdconviawpf
             if (con.insert(sur,namee,born,gen,children) == -1)
             {
                 MessageBox.Show("error");
-            }else
+            }
+            else
             { 
                 MessageBox.Show("ok"); 
             }
